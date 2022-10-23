@@ -26,7 +26,6 @@ html {
 }
 
 body {
-  margin: 0;
   background-color: rgba(255, 255, 255, 1);
   color: var(--primary-text-color);
 
@@ -34,8 +33,22 @@ body {
   letter-spacing: 0.03em;
 }
 
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 2px solid blue;
+}
+.header {
+  background-color: aquamarine;
+}
+
 .list {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 /* logo header */
@@ -74,19 +87,27 @@ body {
 /* hero */
 .hero {
   background-color: rgba(47, 48, 58, 1);
+  text-align: center;
 }
 .hero-title {
   color: var(--primary-white-color);
+  margin-top: 0;
+  margin-bottom: 30px;
 
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
 /* button */
-.button {
+.button-main {
+  border-radius: 4px;
+  border: 0;
+  padding: 10px 32px;
+  min-width: 216px;
+  margin-bottom: 294px;
+
   color: var(--primary-white-color);
   background-color: var(--accent-color);
   cursor: pointer;
@@ -97,7 +118,6 @@ body {
   line-height: 1.88;
   display: flex;
   align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
 }
 
@@ -115,7 +135,7 @@ body {
 .contacts .link:focus {
   color: var(--accent-color);
 }
-
+/* особливості */
 /* titles h2 */
 .section-title {
   color: var(--title-text-color);
@@ -126,8 +146,10 @@ body {
   text-align: center;
 }
 /* titles h3 */
-.peculiarities .title {
+.feature-list .title {
   color: var(--title-text-color);
+  margin-top: 0;
+  margin-bottom: 10px;
 
   font-weight: 700;
   font-size: 14px;
@@ -142,9 +164,12 @@ body {
 }
 
 /*text*/
-.peculiarities .text {
+.feature-list .text {
   font-size: 14px;
   line-height: 1.71;
+
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .team .text {
@@ -186,8 +211,35 @@ body {
 }
 
 /* page portfolio */
+.button-all {
+  display: inline-block;
+  border-radius: 4px;
+  border: 0;
+  padding: 6px 25px;
+  text-align: center;
+
+  color: var(--title-text-color);
+  background-color: var(--button-grey-color);
+  cursor: pointer;
+
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+}
+.button-all:hover,
+.button-all:focus {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+}
 
 .button-menu {
+  display: inline-block;
+  border-radius: 4px;
+  border: 0;
+  padding: 6px 22px;
+  text-align: center;
+
   color: var(--title-text-color);
   background-color: var(--button-grey-color);
   cursor: pointer;
