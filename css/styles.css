@@ -84,6 +84,13 @@ body {
   color: var(--accent-color);
 }
 
+/*SECTION*/
+
+.section {
+  padding-top: 0;
+  padding-bottom: 94px;
+}
+
 /* hero */
 .hero {
   background-color: rgba(47, 48, 58, 1);
@@ -106,7 +113,6 @@ body {
   border: 0;
   padding: 10px 32px;
   min-width: 216px;
-  margin-bottom: 294px;
 
   color: var(--primary-white-color);
   background-color: var(--accent-color);
@@ -144,6 +150,8 @@ body {
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
+  margin-top: 0;
+  margin-bottom: 50px;
 }
 /* titles h3 */
 .feature-list .title {
@@ -155,13 +163,6 @@ body {
   font-size: 14px;
   line-height: 1.14;
 }
-.team .title {
-  color: var(--title-text-color);
-
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.18;
-}
 
 /*text*/
 .feature-list .text {
@@ -172,15 +173,28 @@ body {
   margin-bottom: 0;
 }
 
-.team .text {
-  font-size: 16px;
-  line-height: 1.18;
-}
-/*back "our team"*/
+/*"our team"*/
 .section-team {
   background-color: var(--button-grey-color);
 }
+.team .image {
+  margin-bottom: 30px;
+}
+.team .text {
+  font-size: 16px;
+  line-height: 1.18;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.team .title {
+  color: var(--title-text-color);
 
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
 /* footer */
 .footer {
   background-color: rgba(47, 48, 58, 1);
