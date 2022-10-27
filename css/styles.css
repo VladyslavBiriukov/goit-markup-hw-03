@@ -55,7 +55,7 @@ img {
 
 /* --CONTAINER--*/
 .container {
-  width: 1230px;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -261,11 +261,10 @@ img {
   font-size: 16px;
   line-height: 1.18;
 }
-/* footer */
+/* --FOOTER-- */
 .footer {
   background-color: rgba(47, 48, 58, 1);
 }
-
 .logo-footer {
   color: rgba(255, 255, 255, 1);
 
@@ -290,9 +289,17 @@ img {
   text-decoration: none;
 }
 
-/* page portfolio */
+/* <<<PAGE PORTFOLIO>>> */
 
-/* BUTTON - PORTFOLIO */
+/* --BUTTON - PORTFOLIO-- */
+.filter {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.filter .item:nth-child(-n + 4) {
+  margin-right: 8px;
+}
 .btn {
   display: inline-block;
   border-radius: 4px;
@@ -333,19 +340,25 @@ img {
 .btn-market {
   min-width: 130px;
 }
-/* GALLERY */
+/* --GALLERY-- */
 .gallery {
   margin-bottom: 20px;
 }
 
-/* TITLE AND TEXT */
+/* --TITLE AND TEXT-- */
 .projects {
   display: flex;
   flex-wrap: wrap;
 }
 .projects .item {
   margin-right: 30px;
+  width: 370px;
+  /*width: calc((100%-60px) / 3);
+  margin-right: 30px;*/
   border: 1px solid #eeeeee;
+}
+.projects .item:nth-child(-n + 6) {
+  margin-bottom: 30px;
 }
 .projects .item:nth-child(3n) {
   margin-right: 0;
