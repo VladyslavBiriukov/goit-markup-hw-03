@@ -60,7 +60,6 @@ img {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  outline: 2px solid blue;
 }
 
 /* --HEADER-- */
@@ -265,7 +264,15 @@ img {
 .footer {
   background-color: rgba(47, 48, 58, 1);
 }
+.flex {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
 .logo-footer {
+  margin-bottom: 20px;
+  margin-top: 60px;
+
   color: rgba(255, 255, 255, 1);
 
   font-family: 'Raleway', sans-serif;
@@ -274,21 +281,30 @@ img {
   line-height: 1, 19;
   text-decoration: none;
 }
-
 .adress {
+  display: flex;
+  flex-direction: column;
+}
+.city {
+  margin-bottom: 9px;
+
   color: var(--primary-white-color);
 
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
+  text-decoration: none;
 }
-
 .adress .adress-link {
+  margin-bottom: 9px;
+
   color: rgba(255, 255, 255, 0.6);
 
   text-decoration: none;
 }
-
+.adress .adress-link:last-child {
+  margin-bottom: 60px;
+}
 /* <<<PAGE PORTFOLIO>>> */
 
 /* --BUTTON - PORTFOLIO-- */
@@ -350,6 +366,7 @@ img {
   flex-wrap: wrap;
 }
 .projects .item {
+  margin-right: 30px;
   width: 370px;
   /* width: calc((100%-60px) / 3); */
   margin-right: 20px;
