@@ -344,17 +344,15 @@ img {
 .gallery {
   margin-bottom: 20px;
 }
-
 /* --TITLE AND TEXT-- */
 .projects {
   display: flex;
   flex-wrap: wrap;
 }
 .projects .item {
-  margin-right: 30px;
   width: 370px;
-  /*width: calc((100%-60px) / 3);
-  margin-right: 30px;*/
+  /* width: calc((100%-60px) / 3); */
+  margin-right: 20px;
   border: 1px solid #eeeeee;
 }
 .projects .item:nth-child(-n + 6) {
