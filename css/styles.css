@@ -14,7 +14,7 @@
   --accent-color: rgba(33, 150, 243, 1);
   --primary-white-color: rgba(255, 255, 255, 1);
   --button-grey-color: rgba(245, 244, 250, 1);
-  --card-set-gap: 20px;
+  --card-set-gap: 30px;
 }
 
 body {
@@ -52,10 +52,14 @@ img {
 
 /* --SECTIONS-- */
 .section {
-  padding-top: 94px;
   padding-bottom: 94px;
 }
-
+.feature {
+  padding-top: 94px;
+}
+.portfolio {
+  padding-top: 94px;
+}
 /* --CONTAINER--*/
 .container {
   width: 1200px;
@@ -245,15 +249,14 @@ img {
 .team {
   display: flex;
 }
+.team-description {
+  text-align: center;
+  padding-top: 30px;
+}
 .team .item:not(:last-child) {
   margin-right: 30px;
 }
-.section-team {
-  background-color: var(--button-grey-color);
-}
-.team .image {
-  margin-bottom: 30px;
-}
+
 .team .text {
   font-size: 16px;
   line-height: 1.18;
@@ -310,6 +313,7 @@ img {
   color: rgba(255, 255, 255, 0.6);
 
   text-decoration: none;
+  font-style: normal;
 }
 .adress .adress-link:last-child {
   margin-bottom: 0;
@@ -375,11 +379,9 @@ img {
 .projects {
   display: flex;
   flex-wrap: wrap;
-  margin-right: calc(-1 * var(--card-set-gap));
-  margin-bottom: calc(-1 * var(--card-set-gap));
 }
 .projects .item {
-  flex-basis: calc(100% / 3 - var(--card-set-gap));
+  flex-basis: calc((100% - 60px) / 3);
   border: 1px solid #eeeeee;
   max-width: 370px;
   margin-right: var(--card-set-gap);
