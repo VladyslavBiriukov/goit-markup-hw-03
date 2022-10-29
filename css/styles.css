@@ -14,6 +14,7 @@
   --accent-color: rgba(33, 150, 243, 1);
   --primary-white-color: rgba(255, 255, 255, 1);
   --button-grey-color: rgba(245, 244, 250, 1);
+  --card-set-gap: 20px;
 }
 
 body {
@@ -44,6 +45,8 @@ p {
 }
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 /* RESET - end */
 
@@ -81,6 +84,9 @@ img {
 }
 
 /* --HADER - NAV-- */
+.header {
+  border-bottom: 1px solid #ececec;
+}
 .nav {
   display: flex;
   align-items: center;
@@ -142,6 +148,8 @@ img {
 .hero {
   background-color: rgba(47, 48, 58, 1);
   text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 .hero-title {
   margin-top: 0;
@@ -263,6 +271,8 @@ img {
 /* --FOOTER-- */
 .footer {
   background-color: rgba(47, 48, 58, 1);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .flex {
   display: flex;
@@ -271,7 +281,6 @@ img {
 }
 .logo-footer {
   margin-bottom: 20px;
-  margin-top: 60px;
 
   color: rgba(255, 255, 255, 1);
 
@@ -303,7 +312,7 @@ img {
   text-decoration: none;
 }
 .adress .adress-link:last-child {
-  margin-bottom: 60px;
+  margin-bottom: 0;
 }
 /* <<<PAGE PORTFOLIO>>> */
 
@@ -364,20 +373,21 @@ img {
 .projects {
   display: flex;
   flex-wrap: wrap;
+  margin-right: calc(-1 * var(--card-set-gap));
+  margin-bottom: var(--card-set-gap);
 }
 .projects .item {
-  margin-right: 30px;
-  width: 370px;
-  /* width: calc((100%-60px) / 3); */
-  margin-right: 20px;
+  flex-basis: calc(100% / 3 - var(--card-set-gap));
   border: 1px solid #eeeeee;
+  margin-right: var(--card-set-gap);
+  margin-bottom: var(--card-set-gap);
 }
-.projects .item:nth-child(-n + 6) {
+/* .projects .item:nth-child(-n + 6) {
   margin-bottom: 30px;
 }
 .projects .item:nth-child(3n) {
   margin-right: 0;
-}
+} */
 .projects .title {
   padding-left: 24px;
   padding-right: 24px;
@@ -397,4 +407,27 @@ img {
 
   font-size: 16px;
   line-height: 1.88;
+}
+/*de*/
+.del {
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid var(--title-text-color);
+  margin-top: -20px;
+  margin-left: -20px;
+}
+
+.del > .item-del {
+  border: 1px solid #eeeeee;
+  flex-basis: calc(100% / 3 - 25px);
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.gallery-del {
+}
+
+.item-del .title {
+}
+
+.item-del .text {
 }
