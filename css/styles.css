@@ -224,9 +224,11 @@ img {
 .feature-list {
   display: flex;
 }
+.feature-list .item {
+  min-width: 270px;
+}
 .feature-list .item:not(:last-child) {
   margin-right: 30px;
-  min-width: 270px;
 }
 
 .feature-list .title {
