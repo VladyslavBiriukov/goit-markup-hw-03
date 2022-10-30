@@ -14,7 +14,10 @@
   --accent-color: rgba(33, 150, 243, 1);
   --primary-white-color: rgba(255, 255, 255, 1);
   --button-grey-color: rgba(245, 244, 250, 1);
-  --card-set-gap: 30px;
+  /* Others */
+  /* --card-set-gap: 30px; */
+  --indent: 30px;
+  --items: 3;
 }
 
 body {
@@ -50,6 +53,16 @@ img {
 }
 /* RESET - end */
 
+/* CARD-SET */
+
+.card-set {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--indent);
+}
+.card-set-item {
+  flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / (var(--items)));
+}
 /* --SECTIONS-- */
 .section {
   padding-bottom: 94px;
@@ -233,20 +246,16 @@ img {
 }
 
 /*--WHAT WE DO--*/
-.image-list {
-  display: flex;
-}
-.image-list .item:not(:last-child) {
-  margin-right: 30px;
-}
 
 /* --OUR TEAM-- */
 .our-team {
   background-color: var(--button-grey-color);
 }
+
 .team {
-  display: flex;
+  --items: 4;
 }
+
 .team > .item {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -256,9 +265,6 @@ img {
   text-align: center;
   padding-top: 30px;
   padding-bottom: 30px;
-}
-.team .item:not(:last-child) {
-  margin-right: 30px;
 }
 
 .team .text {
@@ -380,24 +386,8 @@ img {
 .card-content {
   padding: 20px 24px;
   max-width: 370px;
-}
-.projects {
-  display: flex;
-  flex-wrap: wrap;
-}
-.projects .item {
-  flex-basis: calc((100% - 60px) / 3);
   border: 1px solid #eeeeee;
-  max-width: 370px;
-  margin-right: var(--card-set-gap);
-  margin-bottom: var(--card-set-gap);
-}
-
-.projects .item:nth-child(3n) {
-  margin-right: 0;
-}
-.projects .item:nth-child(n + 7) {
-  margin-bottom: 0;
+  border-top: none;
 }
 .projects .title {
   margin-bottom: 4px;
